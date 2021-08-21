@@ -1,4 +1,4 @@
-# Blink Project 
+# Smart Home Project By Telegram BOT
 
 [The Internet of things](https://en.wikipedia.org/wiki/Internet_of_things)  is the network of devices such as vehicles, and home appliances that contain electronics, software, sensors, actuators, and connectivity which allows these things to connect, interact and exchange data.
 
