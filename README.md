@@ -1,5 +1,5 @@
 # Smart Home Project By Telegram BOT
-
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FYasinEnigma%2FSmartHome&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 [The Internet of things](https://en.wikipedia.org/wiki/Internet_of_things)  is the network of devices such as vehicles, and home appliances that contain electronics, software, sensors, actuators, and connectivity which allows these things to connect, interact and exchange data.
 
 in this project, we are using [Telegram Bot](https://github.com/adam-p/markdown-here.wiki.git) for led control. this project, you can control your LED using two way: 
