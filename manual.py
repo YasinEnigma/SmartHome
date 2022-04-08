@@ -40,54 +40,54 @@ def manual(bot):
 
     for update in bot.get_updates(offset=update_id, timeout=10):
         update_id = update.update_id + 1
-        action_list_manual = [["یک روشن", "دو روشن" , "سه روشن"  , "همه روشن"] , ["یک خاموش","دو خاموش","سه خاموش","همه خاموش"], ["بازگشت"],[] ]
+        action_list_manual = ["hii"] ["hey"]
         update.message.reply_text("لطفا یکی از گزینه‌های زیر را انتخاب نمائید : ", reply_markup=telegram.ReplyKeyboardMarkup(action_list_manual, one_time_keyboard=True))
 
         if update.message:  
-            if update.message.text == "یک روشن":
+            if update.message.text == "turn on red":
                 led1.on()
-                bot.sendMessage(update.message.chat_id , "لامپ شماره یک روشن شد.")
+                bot.sendMessage(update.message.chat_id , "turned on red")
                 sleep(1)
 
-            elif update.message.text == "دو روشن":
+            elif update.message.text == "turn on blue":
                 led2.on()
-                update.message.reply_text("لامپ شماره دو روشن شد.")
+                update.message.reply_text("turned on blue")
                 sleep(1)
 
-            elif update.message.text == "سه روشن":
+            elif update.message.text == "turn on green":
                 led3.on()
-                update.message.reply_text("لامپ شماره سه روشن شد.")
+                update.message.reply_text("turned on green")
                 sleep(1)
 
-            elif update.message.text == "همه روشن":
+            elif update.message.text == "turn on all":
                 led1.on()
                 led2.on()
                 led3.on()
-                update.message.reply_text("همه ی لامپ ها روشن شدند .")
+                update.message.reply_text("turned on all")
                 sleep(1)
 
-            if update.message.text == "یک خاموش":
+            if update.message.text == "turn of red":
                 led1.off()
-                update.message.reply_text("لامپ شماره یک خاموش شد.")
+                update.message.reply_text("turned of red")
                 sleep(1)
 
-            elif update.message.text == "دو خاموش":
+            elif update.message.text == "turn of blue":
                 led2.off()
-                update.message.reply_text("لامپ شماره دو خاموش شد.")
+                update.message.reply_text("turned of blue")
                 sleep(1)
 
-            elif update.message.text == "سه خاموش":
+            elif update.message.text == "turn of green":
                 led3.off()
-                update.message.reply_text("لامپ شماره سه خاموش شد.")
+                update.message.reply_text("turned of green")
                 sleep(1)
 
-            elif update.message.text == "همه خاموش":
+            elif update.message.text == "turn all off":
                 led1.off()
                 led2.off()
                 led3.off()
-                update.message.reply_text("همه ی لامپ ها خاموش شدند .")
+                update.message.reply_text("turned all leds off. thanks for saving energy")
                 sleep(1)
-            elif update.message.text == "بازگشت":
+            elif update.message.text == "start":
                 import run
 
                 led1.close()
@@ -103,7 +103,7 @@ def manual(bot):
 
 def main():
     global update_id
-    bot = telegram.Bot('Telegram Token')
+    bot = telegram.Bot('AAETnun0PVseADWv4Tb8uwQWHmjY4wPvWQ8')
 
     try:
         update_id = bot.get_updates()[0].update_id
